@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<!-- inline block -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* reset css*/
+        *{
+            margin: 0;
+            padding: 0;
+            /*box-sizing: content-box; /*default*/
+            box-sizing: border-box; /*horizontal scrolling remove garxa*/
+
+        }
+        .a{
+            text-decoration: none;
+        }
+
+        .box{
+                border: 20px solid black;
+
+        }
+        .parent{
+            width: 600px;
+            border: 1px solid red;
+            
+        }
+        .child{
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: -2px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul type="square">
+                <li><a href="index.html"></a></li>
+                <li><a href="contact.html"></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="parent">
+        <div class="child">Child one</div>
+        <div class="child">Child two</div>
+        <div class="child">Child three</div>
+    </div>
+
+</body>
+</html>
