@@ -6,4 +6,10 @@ Css
 JavaScript (Basic to advance)
 React.js
 Express.js
+Mongo DB
+and Nodejs
+
+#My Review About This Course:
+I'll be posting a rewiew in this repo as soon as my course is over.
+
 
