@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+
+        }
+        /* descendent selector */
+        .big-box .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+        .small-box .child{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+        }
+        .mb-10{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="mb-10">Selector</h1>
+    <h2>Big Box</h2>
+    <div class="big-box">
+        <div class="child first mb-10"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <h2>Small Box</h2>
+    <div class="small-box">
+        <div class="child first mb-10"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>
