@@ -10,6 +10,6 @@ import TodosApi from './component/TodosApi';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <shopping/>
+  // <shopping/>
   <TodosApi/>
 );
