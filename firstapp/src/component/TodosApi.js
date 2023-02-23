@@ -1,55 +1,38 @@
-import react, { useEffect, useState } from 'react' 
-import axios from axios;
-export default function Todoapi(){
-    const [todos, setTodos] = useState([]);
-    axios.get("https://jsonplaceholder.typicode.com/todos")
-        .then(Response => {
-        console.log(response);
- })
-    return(
-        <>
-            <div>Todo Api</div>
-            <table>
-                <thead>
+import { useState } from 'react'
 
-                </thead>
-            </table>
-        </>
+export default function Todos() {
+
+    let inital_todos = ["task-1", "task-2"]
+    const [todos, setTodos] = useState(inital_todos);
+
+    function handleSuibmit(e) {
+        e.preventDefault()
+        // let arr = todos;  // reference data types
+        let arr = [...todos];
+        arr.push(e.target.task_name.value)
+        setTodos(arr)
+    }
+
+    return (
+        <div>
+            <form onSubmit={handleSuibmit}>
+                <input name="product_name" />
+                <input name="quanity" />
+                <button> ADD</button>
+            </form>
+            {/* <form onSubmit={handleSuibmit}>
+                <input name="task_name" />
+                <button> ADD</button>
+            </form> */}
+
+            <h1>Todos</h1>
+            <ul>
+                {
+                    todos.map((todo) => {
+                        return <li>{todo}</li>
+                    })
+                }
+            </ul>
+        </div>
     )
-};
-
-function Todoapi(){
-    
 }
-
-/*
-    CRUD operation 
-    C - create 
-    R - Read
-    U - Update
-    D - Delete
-
-    HTTP methods
-        GET
-        POST
-        PUT
-        DELETE
-
-        STATUS code
-         2 // success
-            200
-            201
-            204
-        3 // reidrect
-            302
-        4// client error
-            401 - unauthenticated .. // not logged in
-            403 - forbidden 
-            404 = resurce not found / page not found
-        5 //
-            500 = server error
- */
-
-
-
-//use useEffect 
