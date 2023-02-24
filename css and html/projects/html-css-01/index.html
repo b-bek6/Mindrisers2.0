@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            
+        }
+        img{
+            height: 15em;
+            width: 15em;
+            border-radius: 5%;
+            object-fit: cover;
+        }
+        .main-body{
+            padding: 10em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(229, 229, 229);
+        }
+        .child-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            border: 1px solid rgba(3, 35, 80, 0.186);
+            border-radius: 1em;
+            max-width: 16em;
+            background-color: rgb(255, 255, 255);
+        }
+        .child{
+            max-width: 15em;
+            margin: 0.5em;
+        }
+        .box button{
+            border-radius: 20%;
+            color: rgba(0, 0, 0, 0.52);
+            border: 1px solid rgba(0, 0, 0, 0.081);
+            padding: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+        button.read{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 10px;
+        color: rgb(28, 127, 166);
+        padding: 1em;
+        border-radius: 20px;
+        border: none;
+        background-color: rgba(149, 171, 218, 0.443);
+        }
+        .readmore{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.415);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <div class="child-body">
+            <div class="child image">
+                <img src="nature.jpg" alt="a man sitting on a boat and enjoying a view of lake">
+            </div>
+            <div class="child box">
+                <button>Nature</button>
+                <button>Lake</button>
+            </div>
+            <div class="child para">
+                <h1>Bibek Ghimire</h1>
+            </div>
+            <div class="child para">
+                <p>Lorem ipsum dolor lorem epsum sodales morbi dignissim sed diam pharetra viltae ip odio consequuntur enim non fuga asperiores eligendi.</p>
+            </div>
+            <div class="child readmore">
+                <button class="read">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
