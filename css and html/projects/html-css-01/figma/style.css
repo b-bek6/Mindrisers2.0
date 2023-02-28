@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FBFBFB;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+}
+nav div{
+    padding: 10px;
+}
+.sign{
+    font-weight: 500;
+    line-height: 19px;
+}
+.sign-in{
+   
+    font-size: 16px;
+    color: #0B132A;
+    border: none;
+    padding-right: 12px;
+}
+.sign-up{
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+
+}
+.first-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    
+
+}
+.child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.child1 .text{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: #0B132A;
+}
+.child1 .text2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+.started{
+    padding: 10px;
+    background: #F54747;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+@media (max-width:992px){
+    .child2 img{
+        width: 100%;
+    }
+    nav ul{
+        content: hidden;
+    }
+    ul{
+        display: none;
+    }
+    .sign{
+        display: none;
+    }
+}
+
+@media (min-width: 714px){
+    nav{
+        flex-direction: row;
+    }
+    
+    .first-body{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 992px){
+    nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 58.62px;
+        align-items: center;
+        
+    }
+    .first-body{
+        flex-direction: row;
+
+    }
+    .child2 img{
+        
+    }
+}
+
