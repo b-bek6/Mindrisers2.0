@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    nav{
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    *{
+        list-style-type: none;
+    }
+    nav ul{
+        /* display: none;  */
+        position: fixed;
+        gap: 20px;
+        background-color: blanchedalmond;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        width: 50%;
+        transition: all .5s;
+
+    }
+    @media(min-width:843px){
+        .menu-tab{
+            display: none;
+        }
+        ul{
+            display: flex;
+        }
+    }
+    /* @media(max-width: 843px){
+        ul{
+            display: none;
+            position: fixed;
+        }
+    }
+    @media(min-width: 844px){
+        .menu-tab{
+            display: none;
+        }
+    } */
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            logo
+        </div>
+            <div class="menu-tab" id="tab">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        <ul id="links">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Resume</li>
+            <li><a href="#"></a>Blog</li>
+            <li><a href="#"></a>Contact</li>
+        </ul>
+    </nav>
+
+    <script>
+        document.getElementById('tab').addEventListener("click",()=>{
+            document.getElementById("links").classList.add("active")
+        })
+
+    </script>
+</body>
+</html>
