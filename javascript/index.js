@@ -22,5 +22,11 @@ let color = "black"     // ecmascript es6 -2015 ma let ra const intrudece vako
 const PI = 3.14         //
 
 
-var dimension; // variable declaration
+var dimension; // variable declaration override hunxa
+
 dimension = '3d'; // initialization
+// let
+
+let activeStatus = true; // redeclare garna paudaina re initialization garna pauxa
+
+// const ma redeclaration garna ni paudaina reinitialization garna in paudaina
