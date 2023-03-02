@@ -17,21 +17,44 @@
     *{
         list-style-type: none;
     }
-    nav ul{
-        /* display: none;  */
-        position: fixed;
+    ul{
+        display: none;
         gap: 20px;
-        background-color: blanchedalmond;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
-        width: 50%;
-        transition: all .5s;
 
     }
+    #cross{
+        display: none;
+    }
+    @media(max-width:843px){
+
+        .menu-tab{
+            display: flex;
+
+        }
+        #links.active{
+            display: flex;
+            position: absolute;
+            float: right;
+            top: -27px;
+            bottom: 0;
+            right: 0;
+            height: 50%;
+            width: 50%;
+            background-color: rgb(240, 183, 108);
+            flex-direction: column;
+
+        }
+        #links.inactive{
+            display: none;
+
+        }
+        #cross.inactive{
+            display: none;
+        }
+    }
+        #cross.active{
+            display: block;
+        }
     @media(min-width:843px){
         .menu-tab{
             display: none;
@@ -60,6 +83,7 @@
             <div class="menu-tab" id="tab">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <div id="cross"><p>X</p></div>
         <ul id="links">
             <li><a href="#"></a>Home</li>
             <li><a href="#"></a>Resume</li>
@@ -72,7 +96,10 @@
         document.getElementById('tab').addEventListener("click",()=>{
             document.getElementById("links").classList.add("active")
         })
+        document.getElementById('tab').addEventListener('click',()=>{
+            document.getElementById("links").classList.add('inactive')
+        })
 
-    </script>
+    </script>s
 </body>
 </html>
