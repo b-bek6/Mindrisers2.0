@@ -43,11 +43,16 @@ let todos = [
 ]
  
 for(let i = 0; i<5;i++){
+
+    todos[i].completed ? console.log(`The task-${todos[i].id} is complete`) : console.log(`The task-${todos[i].id} is incomplete`);
+
+    /*
     if(todos[i].completed){
         console.log(`The task-${todos[i].id} is complete`);
     } else {
         console.log(`The task-${todos[i].id} is incomplete`);
     }
+    */
 }
 function status(todos){
     if(todos.completed){
