@@ -41,10 +41,12 @@ if (enrolled && payment || old_student) {
 <=  lessthan or equlal
 >=
 ==
-=== strickly
+=== strict equality
+
+
+1 = "1" // type casting
 
 
 
 
 */
-
